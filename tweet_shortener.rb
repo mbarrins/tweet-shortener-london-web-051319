@@ -11,6 +11,6 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  puts dictionary.inspect
-  # tweet.split(" ").map {|word| dictionary.include?(word) ? dictionary[word] : word}
+  # puts dictionary.inspect
+  tweet.split(" ").map {|word| dictionary.include?(word) ? dictionary[word] : word}.join(" ")
 end
