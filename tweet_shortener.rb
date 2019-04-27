@@ -10,6 +10,6 @@ def dictionary
   }
 end
 
-def word_substituter
-
+def word_substituter(tweet)
+  tweet.split(" ").map {|word| dictionary.include?(word) ? dictionary[word] : word}
 end
